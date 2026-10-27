@@ -13,3 +13,6 @@ __pycache__/
 
 # Sistema
 .DS_Store
+
+.data/database/
+.data/raw/
