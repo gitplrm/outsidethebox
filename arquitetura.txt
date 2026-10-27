@@ -1,0 +1,41 @@
+projeto_avaliacoes/
+
+├── data/
+│   ├── raw/
+│   │
+│   ├── 1A/
+│   │   ├── 1BR.xlsx
+│   │   ├── 1BQ.xlsx
+│   │   ├── 2BR.xlsx
+│   │   ├── 2BQ.xlsx
+│   │   ├── 3BR.xlsx
+│   │   └── 3BQ.xlsx
+│   │
+│   ├── 1B/
+│   ├── 1C/
+│   └── ...
+│
+├── database/
+│   └── educacao.duckdb
+│
+├── etl/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   └── run_etl.py
+│
+├── repository/
+│   ├── aluno_repository.py
+│   ├── turma_repository.py
+│   └── questao_repository.py
+│
+├── dashboard/
+│   ├── app.py
+│   ├── pages/
+│   │   ├── alunos.py
+│   │   ├── turmas.py
+│   │   └── questoes.py
+│
+├── requirements.txt
+│
+└── README.md

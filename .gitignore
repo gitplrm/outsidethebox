@@ -1,0 +1,15 @@
+# Ambiente virtual
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Banco local
+*.duckdb
+
+# Streamlit cache
+.streamlit/
+
+# Sistema
+.DS_Store
