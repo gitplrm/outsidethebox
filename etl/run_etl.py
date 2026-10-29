@@ -156,6 +156,35 @@ def main():
         "alunos"
     )
 
+    conn = duckdb.connect(
+    str(DATABASE_PATH)
+    )
+
+    alunos = conn.execute("""
+        SELECT COUNT(*)
+        FROM alunos
+    """).fetchone()[0]
+
+    resultados = conn.execute("""
+        SELECT COUNT(*)
+        FROM resultados_alunos
+    """).fetchone()[0]
+
+    questoes = conn.execute("""
+        SELECT COUNT(*)
+        FROM questoes
+    """).fetchone()[0]
+
+    print("\n===== AUDITORIA =====")
+
+    print(f"Alunos: {alunos}")
+    print(f"Resultados: {resultados}")
+    print(f"Questões: {questoes}")
+
+    print("=====================\n")
+
+    conn.close()
+    
     print(
         "ETL concluído."
     )
